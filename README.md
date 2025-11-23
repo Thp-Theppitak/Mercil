@@ -18,3 +18,8 @@ Features
 - พร้อมใช้งานกับหน้า Search ของ MERCIL
 
 ก่อนใช้งานต้องใส่ API Key Gimini ก่อน
+
+Run 
+python -m uvicorn Mercil.HybridSearch:app --reload
+เปิด Swagger UI ได้ที่:
+http://127.0.0.1:8000/docs
