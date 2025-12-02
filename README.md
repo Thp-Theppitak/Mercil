@@ -30,10 +30,10 @@ Backend Service สำหรับระบบค้นหาสถานที�
 3. Install Dependencies
 Bash
 
-# สร้างและเข้า Virtual Environment (ถ้ายังไม่มี)
+ สร้างและเข้า Virtual Environment (ถ้ายังไม่มี)
 python -m venv .venv
-# Windows: .venv\Scripts\activate
-# Mac/Linux: source .venv/bin/activate
+ Windows: .venv\Scripts\activate
+ Mac/Linux: source .venv/bin/activate
 
 # ลง Library
 pip install -r requirements.txt
