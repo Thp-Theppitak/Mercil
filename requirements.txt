@@ -1,0 +1,31 @@
+# Core Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Database
+sqlalchemy==2.0.25
+asyncpg==0.29.0
+psycopg2-binary==2.9.9
+pgvector==0.2.4
+
+# AI/ML
+sentence-transformers==2.3.1
+transformers==4.37.2
+
+# NLP
+spacy==3.7.2
+pythainlp==4.0.2
+
+# LLM
+langchain==0.1.5
+langchain-community==0.0.17   # ← อัปเดตให้ตรง requirement
+
+# Geocoding
+geopy==2.4.1
+python-dotenv==1.0.0
+
+# Utilities
+pydantic==2.5.3
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4

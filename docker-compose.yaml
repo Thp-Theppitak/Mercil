@@ -1,0 +1,21 @@
+services:
+  postgres:
+    # เปลี่ยนกลับมาใช้ build: . เพื่อสร้างจาก Dockerfile ของเราเอง
+    build: .
+    container_name: mercil_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: mercil_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d mercil_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
